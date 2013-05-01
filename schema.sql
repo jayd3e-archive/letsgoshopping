@@ -1,0 +1,16 @@
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(20)
+) ENGINE=innodb;
+
+CREATE TABLE lists (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    user_id INT
+) ENGINE=innodb;
+
+CREATE TABLE list_items (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    list_id INT
+) ENGINE=innodb;
